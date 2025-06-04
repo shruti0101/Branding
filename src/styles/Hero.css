@@ -52,7 +52,7 @@
   z-index: 999;
   animation: fallAndBounce1 1.9s ease-out forwards, float 4s ease-in-out 3s infinite;
 }
-  /* ball2*/
+
 .ball2 {
   width: 14%;
   left: 39%;
