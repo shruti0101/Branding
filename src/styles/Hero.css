@@ -7,7 +7,7 @@
   background-position: center;
   /* overflow: hidden; */
   background-blend-mode: color-burn;
-}
+}    
 
 .hero-content {
   position: relative;
@@ -42,12 +42,11 @@
   pointer-events: none;
   z-index: 999;
   opacity: 1;
-  filter: drop-shadow(0 0 10px rgba(248, 132, 132, 0.6));
   transition: transform 0.2s ease-out;
 }
 
 .ball1 {
-  width: 30%;
+  width: 27%;
   left: 56%; /* slightly left from 70% */
   top: 55%;
   z-index: 999;
