@@ -1,0 +1,108 @@
+
+.orbit-container {
+  position: absolute;
+  border: 1px solid #cbbdee;
+  border-radius: 50%;
+  animation: rotateOrbit 9s linear infinite;
+}
+
+.orbit-container:hover {
+  animation-play-state: paused;
+}
+
+.orbit {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+
+.orbit-1 {
+  width: 180px;
+  height: 180px;
+}
+
+.orbit-2 {
+  width: 250px;
+  height: 250px;
+}
+
+.orbit-3 {
+  width: 320px;
+  height: 320px;
+}
+
+.orbit-4 {
+  width: 400px;
+  height: 400px;
+}
+
+
+.orbit-icon,
+.orbit-dot {
+  position: absolute;
+}
+
+
+.orbit-icon-1 {
+  top: -130px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.orbit-icon-2 {
+  right: -20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.orbit-icon-3 {
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.orbit-icon-4 {
+  left: -20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+
+.orbit-dot {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.orbit-dot-1 {
+  bottom: 10px;
+  right: 12%;
+  background-color: #00bcd4; 
+}
+
+.orbit-dot-2 {
+  top: 10px;
+  right: 22%;
+  background-color: #ff9800; 
+}
+
+.orbit-dot-3 {
+  top: 23%;
+  left: 10px;
+  background-color: #8bc34a; 
+}
+
+.orbit-dot-4 {
+  bottom: 10px;
+  left: 25%;
+  background-color: #f44336; 
+}
+
+@keyframes rotateOrbit {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+

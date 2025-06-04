@@ -1,0 +1,61 @@
+.cta-form input,
+.cta-form textarea {
+  background-color: transparent !important;
+  border: 1px solid #444;
+  color: #fff;
+  border-radius: 8px;
+  padding: 12px;
+}
+
+.cta-form input::placeholder,
+.cta-form textarea::placeholder {
+  color: white;
+}
+
+.cta-form input:focus,
+.cta-form textarea:focus {
+  border-color: #0d6efd;
+  box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.25);
+}
+
+.cta-image {
+  animation: float 4s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-30px); }
+}
+.cta-form input,
+.cta-form textarea {
+  background-color: transparent !important; /* Make background transparent */
+  border: 1px solid #444;
+  /* color: #fff; */
+  border-radius: 8px;
+  padding: 12px;
+}
+
+.cta-form input::placeholder,
+.cta-form textarea::placeholder {
+  color: #aaa;
+}
+
+.cta-form input:focus,
+.cta-form textarea:focus {
+  background-color: transparent !important; /* Prevent white background on focus */
+  border-color: #0d6efd;
+  color: #fff;
+  box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.25);
+}
+
+
+.input-fill {
+  background-color: #1a1a1a;
+  /* color: white; */
+  border: 1px solid #444;
+  transition: all 0.3s ease;
+}
+.input-fill:focus {
+  border-color: #fff;
+  background-color: #222;
+}

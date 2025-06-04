@@ -1,0 +1,154 @@
+.fsbg {
+    background: #2548BD;
+}.footer {
+  background-color: #0B1720;
+  color: white;
+  padding: 40px 20px;
+
+font-family: "Mona Sans", sans-serif;
+  font-size: 17px;
+  line-height: 1.6;
+  position: relative;
+}
+
+
+.footer h3 {
+  font-weight: bold;
+  border-bottom: 3px solid #2548BD;
+  display: inline-block;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+  font-size: 20px;
+}
+
+.footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer ul li {
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+
+.footer ul  li a:hover {
+  color: #2548BD;
+  text-decoration: underline;
+}
+
+
+.footer-top {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.footer-column {
+  flex: 1 1 200px;
+  min-width: 180px;
+}
+
+.cert-logos img {
+  width: 120px;
+  margin: 10px 10px 0 0;
+  vertical-align: middle;
+  background-color: white;
+  padding: 4px;
+  border-radius: 6px;
+}
+
+.footer-bottom {
+  border-top: 3px solid #2548BD;
+  margin-top: 30px;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  font-size: 14px;
+}
+
+
+
+
+
+.footer ul li a {
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.footer ul li a:hover {
+  transform: translateX(5px);
+  color: #0D6EFD;
+  text-decoration: none;
+}
+
+.footer-links a {
+  color: white;
+  text-decoration: none;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.footer-links a:hover {
+  transform: translateX(5px);
+  color:#0D6EFD;
+  /* text-decoration: underline; */
+}
+
+.get-in-touch p {
+  margin: 6px 0;
+  font-size: 15px;
+}
+
+/* .download-brochure-btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 9px 2px;
+  background-color: #2548BD;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 400;
+  transition: background-color 0.3s ease;
+} */
+
+/* .download-brochure-btn:hover {
+  background-color: #0d3ccd;
+} */
+
+
+
+
+@media (max-width: 768px) {
+  .footer-top {
+    flex-direction: column;
+  }
+
+  .footer-column {
+    margin-bottom: 20px;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .cert-logos img {
+    width: 100px;
+  }
+
+  .protection-logos {
+    display: flex;
+    justify-content: center;
+  }
+}
+

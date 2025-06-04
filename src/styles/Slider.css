@@ -1,0 +1,35 @@
+.scroll-container {
+  width: 100%;
+  overflow: hidden;
+  background-color: #000;
+  padding: 12px 0;
+  color: white;
+  font-weight: 600;
+  font-family: "Mona Sans", sans-serif;
+}
+
+.scrolling-wrapper {
+  display: inline-block;
+  white-space: nowrap;
+  animation: scroll 20s linear infinite;
+  animation-play-state: running;
+}
+
+.scrolling-wrapper span {
+  margin: 0 15px;
+  display: inline-block;
+  font-size: 1.4rem;
+}
+
+.star {
+  color: #0b2599;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}

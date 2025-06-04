@@ -1,0 +1,126 @@
+.hero-section {
+  position: relative;
+  height: 100vh;
+  background-image: url("../assets/bg/h1_bg-1.png");
+  background-color: #f9e0e7;
+  background-size: cover;
+  background-position: center;
+  /* overflow: hidden; */
+  background-blend-mode: color-burn;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  text-align: start;
+  padding: 0 20px;
+  margin-bottom: 75px;
+}
+
+.hero-title {
+  color: #000;
+  font-size: 4.5rem;
+  font-weight: bold;
+  margin-bottom: 3rem;
+  text-align: start;
+}
+
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 1.8rem;
+  }
+
+  .glow-ball {
+    width: 80px;
+  }
+}
+
+.glow-ball {
+  position: absolute;
+  width: 100px;
+  height: auto;
+  pointer-events: none;
+  z-index: 999;
+  opacity: 1;
+  filter: drop-shadow(0 0 10px rgba(248, 132, 132, 0.6));
+  transition: transform 0.2s ease-out;
+}
+
+.ball1 {
+  width: 30%;
+  left: 56%; /* slightly left from 70% */
+  top: 55%;
+  z-index: 999;
+  animation: fallAndBounce1 1.9s ease-out forwards, float 4s ease-in-out 3s infinite;
+}
+
+.ball2 {
+  width: 14%;
+  left: 39%;
+  top: 25%;
+  animation: fallAndBounce2 2s ease-out forwards, floatReverse 4s ease-in-out 3.5s infinite;
+}
+
+@keyframes fallAndBounce1 {
+  0% {
+    top: -200px;
+    transform: rotate(720deg) scale(0.8);
+    opacity: 0;
+  }
+  50% {
+    transform: rotate(500deg) scale(1.1);
+    opacity: 1;
+  }
+  70% {
+    top: 52%;
+    transform: rotate(400deg) scale(0.95);
+  }
+  100% {
+    top: 50%;
+    transform: rotate(360deg) scale(1);
+  }
+}
+
+@keyframes fallAndBounce2 {
+  0% {
+    top: -250px;
+    transform: translateX(-50%) rotate(0deg) scale(0.6);
+    opacity: 0;
+  }
+  50% {
+    transform: translateX(-50%) rotate(700deg) scale(1.2);
+    opacity: 1;
+  }
+  70% {
+    top: 26%;
+    transform: translateX(-50%) rotate(600deg) scale(0.95);
+  }
+  100% {
+    top: 25%;
+    transform: translateX(-50%) rotate(550deg) scale(1);
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px) rotate(360deg);
+  }
+  50% {
+    transform: translateY(-10px) rotate(365deg);
+  }
+  100% {
+    transform: translateY(0px) rotate(360deg);
+  }
+}
+
+@keyframes floatReverse {
+  0% {
+    transform: translateX(-50%) translateY(0px) rotate(720deg);
+  }
+  50% {
+    transform: translateX(-50%) translateY(10px) rotate(715deg);
+  }
+  100% {
+    transform: translateX(-50%) translateY(0px) rotate(720deg);
+  }
+}

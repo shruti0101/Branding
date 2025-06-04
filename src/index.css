@@ -1,0 +1,92 @@
+html{
+  scroll-behavior: smooth;
+
+}
+
+
+
+
+body{
+    margin: 0;
+    padding: 0;
+  box-sizing: border-box;
+  font-family: "mona-sans", sans-serif;
+height: 100vh;
+width: 100vw;
+overflow-x: hidden;
+  /* font-family: "Josefin Sans", sans-serif; */
+  scroll-behavior: smooth;
+   padding-top: 85px; 
+}
+.container{
+  width: 90%;
+}
+
+h1,h2{
+  color:var(--primary-color);
+  font-family: "Mona Sans", sans-serif;
+  font-weight: 700;
+}
+
+:root {
+--button-color: #252525;
+  --text-color: rgb(37, 72, 189);;
+
+
+}
+
+.text{
+    color: #0A0A0A;
+  font-family: "Mona Sans", sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+
+
+/* Button styles */
+.nav-btn {
+  position: relative;
+  font-size: 15px;
+  text-transform: capitalize;
+  padding: 0.7rem;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 6em;
+  transition: all 0.2s;
+  border: none;
+  font-weight: bold;
+  color: white !important;
+  text-decoration: none !important;
+  background: linear-gradient(to right, #8e2de2, #083A74);
+}
+
+.nav-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.nav-btn:active {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.nav-btn::after {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all 0.4s;
+  background: linear-gradient(to right, #8e2de2, #083A74);
+}
+
+/* Expanding hover animation */
+.nav-btn:hover::after {
+  transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0;
+}

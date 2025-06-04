@@ -1,0 +1,104 @@
+/* Base card */
+.sector-card {
+  position: relative;
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 10px;
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  text-align: start;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+  z-index: 1;
+  margin-top: 12px;
+  /* margin-bottom: 18px; */
+}
+
+/* Hover elevation */
+.sector-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
+}
+
+/* Image default */
+.sector-card-img {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 10px;
+  object-fit: contain;
+  transition: filter 0.3s ease;
+}
+
+/* Hover: image turns blue */
+.sector-card:hover .sector-card-img {
+  filter: brightness(0) saturate(100%) invert(28%) sepia(97%) saturate(1819%) hue-rotate(189deg) brightness(91%) contrast(101%);
+}
+
+/* Title & Text */
+.sector-card-title {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: #2548BD ;
+  text-transform: uppercase;
+}
+
+.sector-card-text {
+  font-size: 0.85rem;
+  color: #555;
+  min-height: 60px;
+}
+
+/* Animated Borders */
+.left-border,
+.top-border,
+.bottom-border,
+.right-border {
+  content: "";
+  position: absolute;
+  background-color: #0d6efd;
+  transition: all 0.4s ease;
+  z-index: 2;
+  
+}
+
+/* LEFT border (height grow) */
+.left-border {
+  left: 0;
+  bottom: 0;
+  width: 4px;
+  height: 0%;
+}
+
+/* TOP border (width grow) */
+/* .top-border {
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 2px;
+} */
+
+/* BOTTOM border (width grow) */
+/* .bottom-border {
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  transition-delay: 0.2s;
+} */
+
+/* RIGHT border (height grow) */
+/* .right-border {
+  top: 0;
+  right: 0;
+  width: 2px;
+  height: 0%;
+  transition-delay: 0.4s;
+} */
+
+/* Hover effect for all borders */
+.sector-card:hover .left-border {
+  height: 100%;
+}
+

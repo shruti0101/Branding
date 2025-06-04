@@ -1,0 +1,232 @@
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+  transition: top 0.3s ease-in-out;
+
+}
+
+body {
+  padding-top: 80px; 
+  
+}
+
+
+.nav-item .nav-link {
+  color: #000;
+  font-weight: 500;
+  font-size: 15px;
+   font-family: "Mona Sans", sans-serif;
+}
+
+.nav-item .nav-link:hover {
+  color: #2548BD
+}
+
+/* Show dropdown on hover */
+.navbar-nav .dropdown:hover .dropdown-menu {
+  display: block;
+  margin-top: 0;
+  
+
+}
+
+/* Smooth transition for dropdown menu */
+.navbar-nav .dropdown-menu {
+  transition: all 0.3s ease;
+
+  
+}
+.navbar-nav .dropdown-menu .dropdown-item {
+  padding: 10px 25px; 
+  color: #000; /* Default text color */
+}
+
+
+.nav-btn {
+  position: relative;
+  font-size: 15px;
+  text-transform: capitalize;
+  padding: 0.7rem;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 6em;
+  transition: all 0.2s;
+  border: none;
+  font-weight: bold;
+  color: white !important;
+  text-decoration: none !important;
+  background: linear-gradient(to right, #8e2de2, #083A74);
+}
+
+.nav-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.nav-btn:active {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.nav-btn::after {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all 0.4s;
+  background: linear-gradient(to right, #8e2de2, #083A74);
+}
+
+
+.nav-btn:hover::after {
+  transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0;
+}
+
+
+.dropdown-menu .dropdown-item {
+  color: #000;
+  font-weight: 400;
+  font-size: 13px;
+ 
+
+}
+.dropdown-menu .dropdown-item:hover{
+   color:#2548BD;
+
+  
+}
+
+/* Smooth transition for dropdown toggle arrow */
+.dropdown-arrow svg {
+  transition: transform 0.9s ease;
+}
+
+/* Dropdown item arrow style */
+.dropdown-item {
+  position: relative;
+  padding-right: 25px; /* give space for arrow */
+  transition: padding-right 0.3s ease;
+}
+
+/* Arrow on hover on dropdown item */
+.dropdown-hover-arrow {
+  position: absolute;
+  right: 10px;
+  opacity: 0;
+  transform: translateX(-5px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+/* Show arrow on hover */
+.dropdown-item:hover .dropdown-hover-arrow {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+
+
+
+@media (max-width: 991.98px) {
+  .responsive-navbar {
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    background-color: #ffffff !important;
+    padding: 0 !important;
+    width: 100%;
+  }
+
+  .navbar-nav {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 0.5rem 1rem;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+  }
+
+  .navbar-nav .nav-item {
+    border-bottom: 1px solid #f1f1f1;
+    padding: 0.6rem 0;
+  }
+
+  .navbar-nav .nav-link {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #222;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 0.5rem;
+    transition: color 0.2s ease;
+  }
+
+  .navbar-nav .nav-link:hover {
+    color: #2d05be;
+  }
+
+  .navbar-nav .dropdown-menu {
+    display: block;
+    position: static;
+    float: none;
+    box-shadow: none;
+    border: none;
+    background-color: #f9f9f9;
+    padding: 0.4rem 0.8rem;
+    margin-top: 0.3rem;
+    border-radius: 8px;
+    animation: dropdownFade 0.3s ease-in-out;
+  }
+
+  .navbar-nav .dropdown-item {
+    padding: 0.6rem 1.2rem 0.6rem 0.6rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #333;
+    position: relative;
+    border-radius: 6px;
+    transition: background 0.2s ease;
+  }
+
+  .navbar-nav .dropdown-item:hover {
+    background-color: #efefef;
+    color: #2d05be;
+  }
+
+  .dropdown-item .dropdown-hover-arrow {
+    position: absolute;
+    right: 10px;
+    opacity: 1;
+    transform: translateX(0);
+    color: #888;
+    transition: color 0.3s ease;
+  }
+
+  .dropdown-item:hover .dropdown-hover-arrow {
+    color: #2d05be;
+  }
+
+  .dropdown-arrow svg {
+    transition: transform 0.3s ease;
+  }
+
+  .dropdown-menu.show {
+    animation: dropdownFade 0.3s ease-in-out;
+  }
+
+
+}
+
+@media (max-width:768px) {
+  .nav-btn{
+    margin-bottom: 12px;
+  }
+  
+}
