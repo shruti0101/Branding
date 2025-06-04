@@ -3,7 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect, useRef, useState } from 'react';
-import "../../../styles/cta.css";
+import "../../../styles/Cta.css";
 
 function CtaSection() {
   const [showToast, setShowToast] = useState(false);
