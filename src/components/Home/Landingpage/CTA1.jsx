@@ -1,11 +1,11 @@
 import contactusImage from '../../../assets/contactus.svg';
-import 'bootstrap/dist/css/bootstrap.min.css';
+
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect, useRef, useState } from 'react';
 import "../../../styles/Cta.css";
 
-function CtaSection() {
+function Cta1() {
   const [showToast, setShowToast] = useState(false);
   const formRef = useRef();
 
@@ -110,4 +110,4 @@ function CtaSection() {
   );
 }
 
-export default CtaSection;
+export default Cta1;

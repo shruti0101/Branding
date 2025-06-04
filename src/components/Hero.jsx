@@ -1,19 +1,19 @@
 import { useEffect, useRef } from "react";
 import "../styles/Hero.css";
-import "../styles/Bannerbg.css";
+
 
 import im1 from "../../src/assets/bg/boll1.webp";
 import im2 from "../assets/bg/boll2.webp";
 
 import Services from "./Home/Landingpage/Services";
 import WhyChoose from "./Home/Landingpage/WhyChoose";
-import Slider from "./Slider";
-import CTA1 from "./Home/Landingpage/CTA1";
+
+import Cta2 from "../components/Home/Landingpage/Cta2"
 import SectorServe from "./Home/Landingpage/SectorServe";
 import Specialized from "./Home/Landingpage/Specialized";
 import Faq from "./Home/Landingpage/Faq";
-import Orbit from "./Home/Orbit";
-import CTA2 from "./Home/Landingpage/CTA2";
+import Orbit from "./Home/Landingpage/Orbit";
+import Cta1 from "../components/Home/Landingpage/Cta1"
 
 export default function HeroSection() {
   const ball1Ref = useRef(null);
@@ -56,12 +56,12 @@ export default function HeroSection() {
 
       <Services />
       <WhyChoose />
-      <CTA1 />
+      <Cta1 />
       <SectorServe />
       <Specialized />
       <Orbit />
       <Faq />
-      <CTA2 />
+      <Cta2 />
     </>
   );
 }

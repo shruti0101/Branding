@@ -3,11 +3,11 @@ import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-import img1 from "../../assets/share.png";
-import img2 from "../../assets/share2.png";
-import logo from "../../assets/logoo.jpg";
-import bgabout from "../../assets/bg/bg-wavedown.png";
-import "../../styles/Orbit.css";
+import img1 from "../../../assets/share.png"
+import img2 from "../../../assets/share2.png";
+import logo from "../../../assets/logoo.jpg";
+import bgabout from "../../../assets/bg/bg-wavedown.png";
+import "../../../styles/Orbit.css";
 
 const Orbit = () => {
   useEffect(() => {

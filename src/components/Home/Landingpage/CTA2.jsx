@@ -2,7 +2,7 @@ import React from 'react';
 import '../../../styles/Cta2.css';
 import ctaImage from '../../../assets/CTAIMG.png'; 
 
-const CTASection = () => {
+const Cta2 = () => {
   return (
     <section className="cta-section py-5">
       <div className="container">
@@ -28,4 +28,4 @@ const CTASection = () => {
   );
 };
 
-export default CTASection;
+export default Cta2;
